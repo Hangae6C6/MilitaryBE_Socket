@@ -104,10 +104,10 @@ app.use(function (err, req, res, next) {
     res.status(500).send("Something Broke!");
   });
   
-server.listen(httpPort, () => {
-    console.log("http 서버가 켜졌어요");
-  });
-  
-// server1.listen(httpsPort, () => {
-//     console.log("https 서버가 켜졌어요");
+// server.listen(httpPort, () => {
+//     console.log("http 서버가 켜졌어요");
 //   });
+  
+server1.listen(httpsPort, () => {
+    console.log("https 서버가 켜졌어요");
+  });
